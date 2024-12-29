@@ -1,0 +1,157 @@
+/* Global Styles */
+body {
+  font-family: "Lexend Zetta", sans-serif;
+  background-color: #f4ede4;
+  color: #4a3622;
+  margin: 0;
+  padding: 0;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #8d6e63;
+  border-radius: 8px;
+  gap: 60px;
+}
+
+.brand-logo img {
+  height: 80px;
+}
+
+.search-bar {
+  padding: 16px;
+  font-size: 18px;
+  border: 1px solid #bcaaa4;
+  border-radius: 8px;
+  background-color: #f4ede4;
+  width: 100%;
+}
+
+.cart-icon img {
+  width: 50px;
+  height: 50px;
+}
+.cart-icon {
+  border: 1px solid;
+  border-radius: 8px;
+}
+
+.main-section {
+  display: flex;
+  gap: 20px;
+}
+
+.navigation-panel {
+  flex: 0 0 250px;
+  height: auto;
+  background-color: #d7ccc8;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nav-item {
+  padding: 15px;
+  font-size: 16px;
+  background-color: #8d6e63;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.nav-item:hover {
+  background-color: #795548;
+}
+
+.products-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  width: 100%;
+  margin-right: 125px;
+}
+
+.product-item {
+  width: 100%;
+  border: 1px solid #dad9d9;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f4ede4;
+  height: 450px;
+}
+
+.product-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+.product-name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.product-price {
+  font-size: 16px;
+  color: #4a3622;
+}
+
+.buy-button {
+  padding: 15px 20px;
+  font-size: 16px;
+  background-color: #8d6e63;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.buy-button:hover {
+  background-color: #795548;
+}
+
+@media (max-width: 768px) {
+  .products-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .navigation-panel {
+    flex: 0 0 100%;
+  }
+
+  .product-item img {
+    height: 200px;
+  }
+
+  .buy-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

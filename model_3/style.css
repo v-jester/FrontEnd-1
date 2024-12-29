@@ -1,0 +1,182 @@
+body {
+  font-family: "Lexend Zetta", sans-serif;
+  background-color: #f4ede4;
+  color: #4a3622;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  background-color: #8d6e63;
+  border-radius: 8px;
+}
+
+.brand-logo img {
+  height: 80px;
+}
+
+.register-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #795548;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 20px auto;
+}
+
+.register-button:hover {
+  background-color: #5d4037;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.intro-text {
+  flex: 1;
+  text-align: left;
+}
+
+.intro h1 {
+  font-size: 28px;
+}
+
+.intro p {
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.intro-image img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.intro .register-button {
+  margin: 0;
+}
+
+.features {
+  background-image: url("https://static.cdn.oskelly.ru/product/1053869/item-3b9ba1f5-b44c-49d4-ac58-5bcbe6cce8ae.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
+}
+
+.features h2 {
+  text-align: center;
+}
+
+.block {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.feature {
+  flex: 1;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+}
+
+.how-to {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.how-to h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.how-to .block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.step {
+  flex: 1 1 calc(20% - 20px);
+  padding: 15px;
+  background-color: #d7ccc8;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.step:hover {
+  transform: scale(1.05);
+  background-color: #e0bfa9;
+}
+
+.step h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.step p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #8d6e63;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo-footer {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.contact-table {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-table td {
+  padding: 5px;
+  font-size: 16px;
+}
+
+.contact-table td a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.contact-table td a:hover {
+  color: #d7ccc8;
+}
